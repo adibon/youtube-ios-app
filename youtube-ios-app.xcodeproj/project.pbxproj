@@ -19,6 +19,7 @@
 		8667E2FF24B473090078A23D /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8667E2FE24B473090078A23D /* Video.swift */; };
 		8667E30124B473510078A23D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8667E30024B473510078A23D /* Model.swift */; };
 		8667E30324B488840078A23D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8667E30224B488840078A23D /* Response.swift */; };
+		8667E30524B48FC90078A23D /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8667E30424B48FC90078A23D /* ConstantsTemplate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		8667E2FE24B473090078A23D /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		8667E30024B473510078A23D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		8667E30224B488840078A23D /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		8667E30424B48FC90078A23D /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				8667E2D724B439B40078A23D /* LaunchScreen.storyboard */,
 				8667E2DA24B439B40078A23D /* Info.plist */,
 				8667E2FC24B46CD00078A23D /* Constants.swift */,
+				8667E30424B48FC90078A23D /* ConstantsTemplate.swift */,
 				8667E2FE24B473090078A23D /* Video.swift */,
 				8667E30024B473510078A23D /* Model.swift */,
 				8667E30224B488840078A23D /* Response.swift */,
@@ -274,6 +277,7 @@
 				8667E2D124B439B20078A23D /* ViewController.swift in Sources */,
 				8667E2CD24B439B20078A23D /* AppDelegate.swift in Sources */,
 				8667E2CF24B439B20078A23D /* SceneDelegate.swift in Sources */,
+				8667E30524B48FC90078A23D /* ConstantsTemplate.swift in Sources */,
 				8667E30124B473510078A23D /* Model.swift in Sources */,
 				8667E2FD24B46CD00078A23D /* Constants.swift in Sources */,
 				8667E2FF24B473090078A23D /* Video.swift in Sources */,
