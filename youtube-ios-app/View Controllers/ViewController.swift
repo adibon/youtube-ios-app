@@ -35,11 +35,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
        
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.VIDEO_CELL_ID, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.VIDEO_CELL_ID, for: indexPath) as! VideoTableViewCell
     
         //configure cell data
-        let title = self.videos[indexPath.row].title
-        cell.textLabel?.text = title
+        let video = self.videos[indexPath.row]
+        cell.setCell(video)
         return cell
    }
     
@@ -50,6 +50,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func videosFecthed(_ videos: [Video]) {
         self.videos = videos
     
+        tableview.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard tableview.indexPathForSelectedRow != nil else {
+            return
+        }
+        
+        let selectedVideo = videos[tableview.indexPathForSelectedRow!.row]
+        
+        let detail = segue.destination as! DetailViewController
+        
+        detail.video = selectedVideo
+        
         tableview.reloadData()
     }
     
